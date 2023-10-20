@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Rock_Salt";
+    src: url(Fonts/Rock_Salt/RockSalt-Regular.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -39,13 +44,14 @@ body {
 
 .intro-name,
 .intro-title {
-    /* border: 2px solid red; */
+    font-family: "Rock_Salt";
     padding: 0;
     margin: 0;
 }
 
 .intro-name {
-    font-size: 13vmin;
+    font-size: 9vmin;
+    word-spacing: 1.3rem;
 }
 
 .intro-title {
