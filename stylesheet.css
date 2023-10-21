@@ -3,6 +3,16 @@
     src: url(Fonts/Rock_Salt/RockSalt-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Permanent-marker';
+    src: url(Fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Sedgwick-Ave';
+    src: url(Fonts/Sedgwick_Ave/);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -10,31 +20,40 @@
 body {
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
-.intro-page {
-    /* border: 10px solid rgb(240, 36, 240); */
+.page {
+    height: 100vh;
+}
+
+/* Navigation Bar */
+
+.nav-bar {
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 1;
+}
+
+.dropdown-icon {
+    margin-right: 10%;
+    margin-top: 4%;
+}
+
+
+/* Intro Page */
+
+#intro-page {
     height: 100vh;
     display: grid;
     grid-template-rows: repeat(3, 33.3%);
 }
 
-.nav-bar {
-    /* border: 2px solid green; */
-    grid-row: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.dropdown {
-    /* border: 2px solid black; */
-    height: 20%;
-    margin-top: 3%;
-    margin-right: 10%;
-}
-
 .intro-container {
-    /* border: 2px solid black; */
     grid-row: 2;
     display: flex;
     flex-direction: column;
@@ -44,7 +63,7 @@ body {
 
 .intro-name,
 .intro-title {
-    font-family: "Rock_Salt";
+    font-family: "rock_salt";
     padding: 0;
     margin: 0;
 }
@@ -57,3 +76,33 @@ body {
 .intro-title {
     font-size: 1.7em;
 }
+
+
+/* About Page */
+
+#about-page {
+    /* background-color: antiquewhite; */
+    height: 200vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+
+.about-me {
+    position: absolute;
+    top: 10%;
+    left: 12%;
+}
+
+.slide-in-text {
+    opacity: .3;
+    font-family: "Rock_Salt";
+    font-size: 12vmin;
+    word-spacing: 1.3rem;
+}
+
+
+
+
